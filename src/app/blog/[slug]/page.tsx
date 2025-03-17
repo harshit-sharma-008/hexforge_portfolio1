@@ -19,7 +19,7 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
     slug: post.slug,
   }));
 }
-/*
+
 export function generateMetadata({ params: { slug } }: BlogParams) {
   let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === slug);
 
@@ -114,4 +114,4 @@ export default function Blog({ params }: BlogParams) {
     </Column>
   );
 }
-*/
+
