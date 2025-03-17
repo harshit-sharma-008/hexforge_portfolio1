@@ -19,14 +19,14 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
     slug: post.slug,
   }));
 }
-
+/*
 export function generateMetadata({ params: { slug } }: BlogParams) {
   let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === slug);
 
   if (!post) {
     return;
   }
-/*
+
   let {
     title,
     publishedAt: publishedTime,
@@ -51,7 +51,7 @@ export function generateMetadata({ params: { slug } }: BlogParams) {
           url: ogImage,
         },
       ],
-    },*/
+    },
     twitter: {
       card: "summary_large_image",
       title,
@@ -60,7 +60,7 @@ export function generateMetadata({ params: { slug } }: BlogParams) {
     },
   };
 }
-/*
+
 export default function Blog({ params }: BlogParams) {
   let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === params.slug);
 
