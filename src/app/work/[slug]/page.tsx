@@ -12,14 +12,13 @@ interface WorkParams {
     slug: string;
   };
 }
-
+/*
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const posts = getPosts(["src", "app", "work", "projects"]);
   return posts.map((post) => ({
     slug: post.slug,
   }));
 }
-
 export function generateMetadata({ params: { slug } }: WorkParams) {
   let post = getPosts(["src", "app", "work", "projects"]).find((post) => post.slug === slug);
 
@@ -127,3 +126,4 @@ export default function Project({ params }: WorkParams) {
     </Column>
   );
 }
+*/
